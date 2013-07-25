@@ -1,0 +1,24 @@
+-main ApplicationMain 
+-lib openfl
+-lib openfl-html5
+-lib box2d
+-lib swf
+-lib swf
+-cp Source
+-cp C:\HaxeToolkit\haxe/lib\openfl/1,0,4/
+-cp C:\HaxeToolkit\haxe/lib\openfl-html5/1,0,3/
+-D nme4=1
+-D tools=1
+-D nme_ver=4.0.2
+-D nme
+-D nme_install_tool=1
+-D html5
+-D web
+-resource H:\Dev\Haxe\B2destHero\Assets\ActionManBold.ttf.hash@NME_assets_actionmanbold_ttf
+-resource H:\Dev\Haxe\B2destHero\Assets\ComicBook.ttf.hash@NME_assets_comicbook_ttf
+-js Export/html5/bin/B2destHero.js
+-cp Export/html5/haxe
+-D html5
+-D html
+--remap flash:flash
+-debug

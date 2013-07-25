@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="B2destHero" package="org.openfl.samples.B2destHero" version="1.0.0" company="OpenFL" />
+	<app file="B2destHero" main="Main" path="Export" />
+	<window width="960" height="540" fps="30" />
+	
+	<source path="Source" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="box2d" />
+	
+	<assets path="Assets" rename="assets" exclude="nme.svg" />
+</project>
