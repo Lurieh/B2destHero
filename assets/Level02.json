@@ -6,6 +6,59 @@
    [
       
       {
+         "angle" : 1.570796370506287,
+         "angularDamping" : 1,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 160,
+               "friction" : 20.0,
+               "name" : "Plank",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        2.638547658920288,
+                        2.638546228408814,
+                        -2.638547182083130,
+                        -2.638546943664551
+                     ],
+                     "y" : 
+                     [
+                        -0.2646771669387817,
+                        0.2646807432174683,
+                        0.2646809816360474,
+                        -0.2646769285202026
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearDamping" : 0.50,
+         "linearVelocity" : 0,
+         "massData-I" : 6.547883033752441,
+         "massData-center" : 
+         {
+            "x" : -6.793144535777174e-008,
+            "y" : 1.897318270493997e-006
+         },
+         "massData-mass" : 2.793471336364746,
+         "name" : "Plank",
+         "position" : 
+         {
+            "x" : -15.65289592742920,
+            "y" : 2.891230344772339
+         },
+         "type" : 2
+      },
+      
+      {
          "angle" : 0,
          "angularVelocity" : 0,
          "awake" : true,
@@ -170,8 +223,8 @@
          "name" : "Victim",
          "position" : 
          {
-            "x" : 86.34977722167969,
-            "y" : 1.425630092620850
+            "x" : 27.42918205261231,
+            "y" : 1.802680373191834
          },
          "type" : 2
       },
@@ -221,13 +274,14 @@
       
       {
          "angle" : 0,
+         "angularDamping" : 1,
          "angularVelocity" : 0,
          "awake" : true,
          "fixture" : 
          [
             
             {
-               "density" : 1,
+               "density" : 1.857284903526306,
                "filterCategoryBits" : 36,
                "friction" : 0.2,
                "name" : "Block",
@@ -254,18 +308,18 @@
             }
          ],
          "linearVelocity" : 0,
-         "massData-I" : 19.32643318176270,
+         "massData-I" : 35.89469146728516,
          "massData-center" : 
          {
             "x" : 4.859626301367825e-007,
             "y" : 3.611405965942005e-011
          },
-         "massData-mass" : 10.76840686798096,
+         "massData-mass" : 20.0,
          "name" : "Block",
          "position" : 
          {
-            "x" : -17.26748085021973,
-            "y" : 59.24768066406250
+            "x" : -17.26749992370606,
+            "y" : 104.8488388061523
          },
          "type" : 2
       },
@@ -308,8 +362,8 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : 148.0813140869141,
-            "y" : 3.239534378051758
+            "x" : 92.91624450683594,
+            "y" : 3.434521675109863
          },
          "type" : 0
       },
@@ -352,8 +406,8 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : -148.6229553222656,
-            "y" : 236.8910369873047
+            "x" : -93.03217315673828,
+            "y" : 172.4194488525391
          },
          "type" : 0
       },
@@ -396,8 +450,8 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : 146.1357727050781,
-            "y" : 238.6421356201172
+            "x" : 90.9707031250,
+            "y" : 174.2451019287109
          },
          "type" : 0
       },
@@ -440,366 +494,15 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : -148.9613647460938,
-            "y" : 3.795800685882568
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 154.5236206054688,
-            "y" : 24.89882278442383
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 154.5236206054688,
-            "y" : 152.0937042236328
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 154.5236206054688,
-            "y" : 88.49624633789063
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 154.5236206054688,
-            "y" : 279.288574218750
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 154.5236206054688,
-            "y" : 215.6911315917969
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : -154.8818054199219,
-            "y" : 87.90010070800781
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : -154.8818054199219,
-            "y" : 215.0949859619141
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 1.570796370506287,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : -154.8818054199219,
-            "y" : 278.6924133300781
+            "x" : -93.52262115478516,
+            "y" : 3.588602066040039
          },
          "type" : 0
       },
       
       {
          "angle" : 0,
+         "angularDamping" : 1,
          "angularVelocity" : 0,
          "awake" : true,
          "fixture" : 
@@ -807,7 +510,357 @@
             
             {
                "density" : 1,
-               "filterCategoryBits" : 36,
+               "filterCategoryBits" : 128,
+               "filterMaskBits" : 145,
+               "friction" : 0.2,
+               "name" : "WarningUp",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        1.408922195434570,
+                        1.408922195434570,
+                        -1.408926010131836,
+                        -1.408926010131836
+                     ],
+                     "y" : 
+                     [
+                        -0.8145089149475098,
+                        0.8145089149475098,
+                        0.8145089149475098,
+                        -0.8145089149475098
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearVelocity" : 0,
+         "massData-I" : 4.052479743957520,
+         "massData-center" : 
+         {
+            "x" : -1.909402726596454e-006,
+            "y" : -4.134697473290316e-009
+         },
+         "massData-mass" : 4.590324878692627,
+         "name" : "WarningUp",
+         "position" : 
+         {
+            "x" : -17.87863540649414,
+            "y" : 6.921541213989258
+         },
+         "type" : 2
+      },
+      
+      {
+         "angle" : 1.570796370506287,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 80,
+               "friction" : 0.2,
+               "name" : "GroundStatic",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        31.79771804809570,
+                        31.79771804809570,
+                        -31.79966545104981,
+                        -31.79966545104981
+                     ],
+                     "y" : 
+                     [
+                        -3.946934938430786,
+                        3.999958515167236,
+                        3.999958515167236,
+                        -3.946934938430786
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearVelocity" : 0,
+         "name" : "HorizontalGround",
+         "position" : 
+         {
+            "x" : 99.35855102539063,
+            "y" : 87.69667053222656
+         },
+         "type" : 0
+      },
+      
+      {
+         "angle" : 1.570796370506287,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 80,
+               "friction" : 0.2,
+               "name" : "GroundStatic",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        31.79771804809570,
+                        31.79771804809570,
+                        -31.79966545104981,
+                        -31.79966545104981
+                     ],
+                     "y" : 
+                     [
+                        -3.946934938430786,
+                        3.999958515167236,
+                        3.999958515167236,
+                        -3.946934938430786
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearVelocity" : 0,
+         "name" : "HorizontalGround",
+         "position" : 
+         {
+            "x" : 99.35855102539063,
+            "y" : 24.09920692443848
+         },
+         "type" : 0
+      },
+      
+      {
+         "angle" : 1.570796370506287,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 80,
+               "friction" : 0.2,
+               "name" : "GroundStatic",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        31.79771804809570,
+                        31.79771804809570,
+                        -31.79966545104981,
+                        -31.79966545104981
+                     ],
+                     "y" : 
+                     [
+                        -3.946934938430786,
+                        3.999958515167236,
+                        3.999958515167236,
+                        -3.946934938430786
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearVelocity" : 0,
+         "name" : "HorizontalGround",
+         "position" : 
+         {
+            "x" : 99.35855102539063,
+            "y" : 151.2940979003906
+         },
+         "type" : 0
+      },
+      
+      {
+         "angle" : 1.570796370506287,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 80,
+               "friction" : 0.2,
+               "name" : "GroundStatic",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        31.79771804809570,
+                        31.79771804809570,
+                        -31.79966545104981,
+                        -31.79966545104981
+                     ],
+                     "y" : 
+                     [
+                        -3.946934938430786,
+                        3.999958515167236,
+                        3.999958515167236,
+                        -3.946934938430786
+                     ]
+                  }
+               }
+            }
+         ],
+         "linearVelocity" : 0,
+         "name" : "HorizontalGround",
+         "position" : 
+         {
+            "x" : -99.44306182861328,
+            "y" : 87.69290161132813
+         },
+         "type" : 0
+      },
+      
+      {
+         "allowSleep" : false,
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixedRotation" : true,
+         "fixture" : 
+         [
+            
+            {
+               "friction" : 1,
+               "name" : "HeroBodyFly",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        0.4919239878654480,
+                        0.4919239878654480,
+                        -0.4920459985733032,
+                        -0.4920459985733032
+                     ],
+                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
+                  }
+               }
+            },
+            
+            {
+               "circle" : 
+               {
+                  "center" : 
+                  {
+                     "x" : -4.768369876728684e-007,
+                     "y" : -5.245210104476428e-006
+                  },
+                  "radius" : 5.485640048980713
+               },
+               "filterCategoryBits" : 2,
+               "friction" : 0.2,
+               "name" : "HeroAura",
+               "sensor" : true
+            },
+            
+            {
+               "friction" : 1,
+               "name" : "HeroBodyStill",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        0.4876109957695007,
+                        0.4876109957695007,
+                        -0.4877319931983948,
+                        -0.4877319931983948
+                     ],
+                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
+                  }
+               }
+            }
+         ],
+         "gravityScale" : 9.999999824516700e-014,
+         "linearDamping" : 4.0,
+         "linearVelocity" : 0,
+         "name" : "HeroBody",
+         "position" : 
+         {
+            "x" : -11.63785457611084,
+            "y" : 1.333373785018921
+         },
+         "type" : 1
+      },
+      
+      {
+         "allowSleep" : false,
+         "angle" : 0,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixedRotation" : true,
+         "fixture" : 
+         [
+            
+            {
+               "filterMaskBits" : 80,
+               "friction" : 1,
+               "name" : "HeroSoul",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : 
+                     [
+                        0.4909600019454956,
+                        0.4909600019454956,
+                        -0.4858250021934509,
+                        -0.4858250021934509
+                     ],
+                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
+                  }
+               }
+            }
+         ],
+         "gravityScale" : 0,
+         "linearDamping" : 4.0,
+         "linearVelocity" : 
+         {
+            "x" : 0,
+            "y" : 10.0
+         },
+         "massData-mass" : 1,
+         "name" : "HeroSoul",
+         "position" : 
+         {
+            "x" : -11.63776493072510,
+            "y" : 1.333419561386108
+         },
+         "type" : 2
+      },
+      
+      {
+         "angle" : 0,
+         "angularDamping" : 1,
+         "angularVelocity" : 0,
+         "awake" : true,
+         "fixture" : 
+         [
+            
+            {
+               "density" : 1,
+               "filterCategoryBits" : 160,
                "friction" : 20.0,
                "name" : "Plank",
                "polygon" : 
@@ -816,10 +869,10 @@
                   {
                      "x" : 
                      [
-                        2.493947982788086,
-                        2.493947982788086,
-                        -2.493947982788086,
-                        -2.493947982788086
+                        2.493949890136719,
+                        2.493949890136719,
+                        -2.493949890136719,
+                        -2.493949890136719
                      ],
                      "y" : 
                      [
@@ -834,18 +887,18 @@
          ],
          "linearDamping" : 0.50,
          "linearVelocity" : 0,
-         "massData-I" : 5.226285934448242,
+         "massData-I" : 5.226297378540039,
          "massData-center" : 
          {
-            "x" : -1.060954613052445e-008,
-            "y" : -5.981678485866837e-010
+            "x" : 2.233119822392382e-008,
+            "y" : 3.523587810416728e-010
          },
-         "massData-mass" : 2.495693683624268,
+         "massData-mass" : 2.49569559097290,
          "name" : "Plank",
          "position" : 
          {
-            "x" : -154.7928619384766,
-            "y" : 310.8341674804688
+            "x" : -17.86152076721191,
+            "y" : 5.828373908996582
          },
          "type" : 2
       },
@@ -888,8 +941,8 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : -154.8818054199219,
-            "y" : 151.497558593750
+            "x" : -99.44306182861328,
+            "y" : 151.2903594970703
          },
          "type" : 0
       },
@@ -932,58 +985,15 @@
          "name" : "HorizontalGround",
          "position" : 
          {
-            "x" : -154.8818054199219,
-            "y" : 24.30267715454102
+            "x" : -99.44306182861328,
+            "y" : 24.09547805786133
          },
          "type" : 0
       },
       
       {
          "angle" : 0,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 127.1549224853516,
-            "y" : 243.4896392822266
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 0,
+         "angularDamping" : 1,
          "angularVelocity" : 0,
          "awake" : true,
          "fixture" : 
@@ -1094,7 +1104,7 @@
          "position" : 
          {
             "x" : 63.55749511718750,
-            "y" : 243.4896392822266
+            "y" : 179.4118499755859
          },
          "type" : 0
       },
@@ -1138,51 +1148,7 @@
          "position" : 
          {
             "x" : -0.03994476795196533,
-            "y" : 243.4896392822266
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 0,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : -127.2348175048828,
-            "y" : 243.4896392822266
+            "y" : 179.4118499755859
          },
          "type" : 0
       },
@@ -1226,7 +1192,7 @@
          "position" : 
          {
             "x" : -63.63739013671875,
-            "y" : 243.4896392822266
+            "y" : 179.4118499755859
          },
          "type" : 0
       },
@@ -1276,62 +1242,6 @@
       },
       
       {
-         "allowSleep" : false,
-         "angle" : 0,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixedRotation" : true,
-         "fixture" : 
-         [
-            
-            {
-               "circle" : 
-               {
-                  "center" : 
-                  {
-                     "x" : -4.768371582031250e-007,
-                     "y" : -5.245208740234375e-006
-                  },
-                  "radius" : 5.485641956329346
-               },
-               "filterCategoryBits" : 2,
-               "friction" : 0.2,
-               "name" : "HeroAura",
-               "sensor" : true
-            },
-            
-            {
-               "friction" : 1,
-               "name" : "HeroBody",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        0.5238776206970215,
-                        0.5238776206970215,
-                        -0.5239992141723633,
-                        -0.5239992141723633
-                     ],
-                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
-                  }
-               }
-            }
-         ],
-         "gravityScale" : 9.999999824516700e-014,
-         "linearDamping" : 4.0,
-         "linearVelocity" : 0,
-         "name" : "HeroBody",
-         "position" : 
-         {
-            "x" : -12.04461765289307,
-            "y" : 1.327783584594727
-         },
-         "type" : 1
-      },
-      
-      {
          "angle" : 0,
          "angularVelocity" : 0,
          "awake" : true,
@@ -1376,133 +1286,56 @@
       },
       
       {
-         "allowSleep" : false,
-         "angle" : 0,
+         "angle" : 1.570796370506287,
+         "angularDamping" : 1,
          "angularVelocity" : 0,
          "awake" : true,
-         "fixedRotation" : true,
          "fixture" : 
          [
             
             {
-               "filterMaskBits" : 80,
-               "friction" : 1,
-               "name" : "HeroSoul",
+               "density" : 1,
+               "filterCategoryBits" : 160,
+               "friction" : 20.0,
+               "name" : "Plank",
                "polygon" : 
                {
                   "vertices" : 
                   {
                      "x" : 
                      [
-                        0.5265059471130371,
-                        0.5265059471130371,
-                        -0.5213708877563477,
-                        -0.5213708877563477
+                        2.638547658920288,
+                        2.638546228408814,
+                        -2.638547182083130,
+                        -2.638546943664551
                      ],
-                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
+                     "y" : 
+                     [
+                        -0.2646771669387817,
+                        0.2646807432174683,
+                        0.2646809816360474,
+                        -0.2646769285202026
+                     ]
                   }
                }
             }
          ],
-         "gravityScale" : 9.999999824516700e-014,
-         "linearDamping" : 4.0,
+         "linearDamping" : 0.50,
          "linearVelocity" : 0,
-         "massData-mass" : 1,
-         "name" : "HeroSoul",
+         "massData-I" : 6.547883033752441,
+         "massData-center" : 
+         {
+            "x" : -6.793144535777174e-008,
+            "y" : 1.897318270493997e-006
+         },
+         "massData-mass" : 2.793471336364746,
+         "name" : "Plank",
          "position" : 
          {
-            "x" : -12.04452991485596,
-            "y" : 1.327830314636231
+            "x" : -20.07671928405762,
+            "y" : 2.891230344772339
          },
          "type" : 2
-      },
-      
-      {
-         "angle" : 0,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : -127.2348175048828,
-            "y" : -3.753161191940308
-         },
-         "type" : 0
-      },
-      
-      {
-         "angle" : 0,
-         "angularVelocity" : 0,
-         "awake" : true,
-         "fixture" : 
-         [
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 80,
-               "friction" : 0.2,
-               "name" : "GroundStatic",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : 
-                     [
-                        31.79771804809570,
-                        31.79771804809570,
-                        -31.79966545104981,
-                        -31.79966545104981
-                     ],
-                     "y" : 
-                     [
-                        -3.946934938430786,
-                        3.999958515167236,
-                        3.999958515167236,
-                        -3.946934938430786
-                     ]
-                  }
-               }
-            }
-         ],
-         "linearVelocity" : 0,
-         "name" : "HorizontalGround",
-         "position" : 
-         {
-            "x" : 127.1549224853516,
-            "y" : -3.753160715103149
-         },
-         "type" : 0
       },
       
       {
@@ -1573,7 +1406,7 @@
                "density" : 1.000000031374395e-022,
                "filterCategoryBits" : 0,
                "filterMaskBits" : 0,
-               "name" : "NormalSight",
+               "name" : "SavedSight",
                "polygon" : 
                {
                   "vertices" : 
@@ -1616,10 +1449,26 @@
             },
             
             {
+               "density" : 1,
+               "filterCategoryBits" : 40,
+               "filterMaskBits" : 86,
+               "friction" : 20.0,
+               "name" : "Victim",
+               "polygon" : 
+               {
+                  "vertices" : 
+                  {
+                     "x" : [ 0.50, 0.50, -0.50, -0.50 ],
+                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
+                  }
+               }
+            },
+            
+            {
                "density" : 1.000000031374395e-022,
                "filterCategoryBits" : 0,
                "filterMaskBits" : 0,
-               "name" : "SavedSight",
+               "name" : "NormalSight",
                "polygon" : 
                {
                   "vertices" : 
@@ -1641,22 +1490,6 @@
                   }
                },
                "sensor" : true
-            },
-            
-            {
-               "density" : 1,
-               "filterCategoryBits" : 40,
-               "filterMaskBits" : 86,
-               "friction" : 20.0,
-               "name" : "Victim",
-               "polygon" : 
-               {
-                  "vertices" : 
-                  {
-                     "x" : [ 0.50, 0.50, -0.50, -0.50 ],
-                     "y" : [ -1.0, 1.0, 1.0, -1.0 ]
-                  }
-               }
             }
          ],
          "linearVelocity" : 0,
@@ -1724,7 +1557,7 @@
    {
       "names" : 
       [
-         "  ",
+         "Hero",
          "HeroAura",
          "Danger",
          "Vctim",
@@ -1768,123 +1601,47 @@
    [
       
       {
-         "body" : 5,
+         "body" : 3,
          "center" : 
          {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
+            "x" : 9.536743164062500e-007,
+            "y" : 0
          },
          "corners" : 
          {
             "x" : 
             [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 17,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 19,
-         "center" : 
-         {
-            "x" : -7.762400855426677e-006,
-            "y" : 5.788549060525838e-006
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -2.806680679321289,
-               2.806664943695068,
-               2.806664943695068,
-               -2.806680679321289
+               -1.691247463226318,
+               1.691249370574951,
+               1.691249370574951,
+               -1.691247463226318
             ],
             "y" : 
             [
-               -2.806667089462280,
-               -2.806667089462280,
-               2.806678533554077,
-               2.806678533554077
+               -1.640763401985169,
+               -1.640763401985169,
+               1.640763401985169,
+               1.640763401985169
             ]
          },
-         "file" : "assets/boulder.png",
+         "file" : "assets/Block.png",
          "filter" : 1,
          "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
          "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
          "glVertexPointer" : 
          [
-            -2.806680679321289,
-            -2.806667089462280,
-            2.806664943695068,
-            -2.806667089462280,
-            2.806664943695068,
-            2.806678533554077,
-            -2.806680679321289,
-            2.806678533554077
+            -1.691247463226318,
+            -1.640763401985169,
+            1.691249370574951,
+            -1.640763401985169,
+            1.691249370574951,
+            1.640763401985169,
+            -1.691247463226318,
+            1.640763401985169
          ],
-         "name" : "Boulder",
+         "name" : "Block",
          "opacity" : 1,
-         "scale" : 5.613345623016357
+         "scale" : 3.281526803970337
       },
       
       {
@@ -1926,45 +1683,7 @@
       },
       
       {
-         "body" : 7,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 9,
+         "body" : 10,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2046,7 +1765,7 @@
       },
       
       {
-         "body" : 10,
+         "body" : 9,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2084,7 +1803,7 @@
       },
       
       {
-         "body" : 8,
+         "body" : 7,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2160,7 +1879,7 @@
       },
       
       {
-         "body" : 13,
+         "body" : 5,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2236,89 +1955,91 @@
       },
       
       {
-         "body" : 3,
+         "body" : 18,
          "center" : 
          {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
+            "x" : -7.762400855426677e-006,
+            "y" : 5.788549060525838e-006
          },
          "corners" : 
          {
             "x" : 
             [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
+               -2.806680679321289,
+               2.806664943695068,
+               2.806664943695068,
+               -2.806680679321289
             ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
+            "y" : 
+            [
+               -2.806667089462280,
+               -2.806667089462280,
+               2.806678533554077,
+               2.806678533554077
+            ]
          },
-         "file" : "assets/terrain.png",
+         "file" : "assets/boulder.png",
          "filter" : 1,
          "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
          "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
          "glVertexPointer" : 
          [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
+            -2.806680679321289,
+            -2.806667089462280,
+            2.806664943695068,
+            -2.806667089462280,
+            2.806664943695068,
+            2.806678533554077,
+            -2.806680679321289,
+            2.806678533554077
          ],
-         "name" : "GroundStatic",
+         "name" : "Boulder",
          "opacity" : 1,
-         "scale" : 8.0
+         "scale" : 5.613345623016357
+      },
+      
+      {
+         "body" : 8,
+         "center" : 0,
+         "corners" : 
+         {
+            "x" : 
+            [
+               -1.408880472183228,
+               1.408880472183228,
+               1.408880472183228,
+               -1.408880472183228
+            ],
+            "y" : 
+            [
+               -0.8145090341567993,
+               -0.8145090341567993,
+               0.8145090341567993,
+               0.8145090341567993
+            ]
+         },
+         "file" : "assets/warningUp.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -1.408880472183228,
+            -0.8145090341567993,
+            1.408880472183228,
+            -0.8145090341567993,
+            1.408880472183228,
+            0.8145090341567993,
+            -1.408880472183228,
+            0.8145090341567993
+         ],
+         "name" : "WarningUp",
+         "opacity" : 1,
+         "scale" : 1.629018068313599
       },
       
       {
          "body" : 2,
-         "center" : 
-         {
-            "x" : 9.536743164062500e-007,
-            "y" : 0
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -1.691247463226318,
-               1.691249370574951,
-               1.691249370574951,
-               -1.691247463226318
-            ],
-            "y" : 
-            [
-               -1.640763401985169,
-               -1.640763401985169,
-               1.640763401985169,
-               1.640763401985169
-            ]
-         },
-         "file" : "assets/Block.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -1.691247463226318,
-            -1.640763401985169,
-            1.691249370574951,
-            -1.640763401985169,
-            1.691249370574951,
-            1.640763401985169,
-            -1.691247463226318,
-            1.640763401985169
-         ],
-         "name" : "Block",
-         "opacity" : 1,
-         "scale" : 3.281526803970337
-      },
-      
-      {
-         "body" : 1,
          "center" : 
          {
             "x" : 7.635840120201465e-006,
@@ -2362,7 +2083,7 @@
       },
       
       {
-         "body" : 0,
+         "body" : 1,
          "center" : 
          {
             "x" : -3.814697265625000e-006,
@@ -2406,7 +2127,7 @@
       },
       
       {
-         "body" : 0,
+         "body" : 1,
          "center" : 
          {
             "x" : -3.814697265625000e-006,
@@ -2450,7 +2171,7 @@
       },
       
       {
-         "body" : 0,
+         "body" : 1,
          "center" : 
          {
             "x" : 1.668930053710938e-005,
@@ -2494,7 +2215,7 @@
       },
       
       {
-         "body" : 0,
+         "body" : 1,
          "center" : 0,
          "corners" : 
          {
@@ -2528,7 +2249,7 @@
       },
       
       {
-         "body" : 0,
+         "body" : 1,
          "center" : 
          {
             "x" : -3.814697265625000e-006,
@@ -2572,7 +2293,209 @@
       },
       
       {
-         "body" : 30,
+         "body" : 0,
+         "center" : 
+         {
+            "x" : -1.768990358641531e-007,
+            "y" : 5.990732887539707e-008
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -2.638335943222046,
+               2.638335704803467,
+               2.638335704803467,
+               -2.638335943222046
+            ],
+            "y" : 
+            [
+               -0.2644947469234467,
+               -0.2644947469234467,
+               0.2644948661327362,
+               0.2644948661327362
+            ]
+         },
+         "file" : "assets/plank03.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -2.638335943222046,
+            -0.2644947469234467,
+            2.638335704803467,
+            -0.2644947469234467,
+            2.638335704803467,
+            0.2644948661327362,
+            -2.638335943222046,
+            0.2644948661327362
+         ],
+         "name" : "Plank",
+         "opacity" : 1,
+         "scale" : 0.5289896130561829
+      },
+      
+      {
+         "body" : 20,
+         "center" : 
+         {
+            "x" : -3.287936145568438e-009,
+            "y" : 7.801725132594584e-008
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -31.79766464233398,
+               31.79766464233398,
+               31.79766464233398,
+               -31.79766464233398
+            ],
+            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
+         },
+         "file" : "assets/terrain.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            4.0,
+            -31.79766464233398,
+            4.0
+         ],
+         "name" : "GroundStatic",
+         "opacity" : 1,
+         "scale" : 8.0
+      },
+      
+      {
+         "body" : 26,
+         "center" : 
+         {
+            "x" : -3.287936145568438e-009,
+            "y" : 7.801725132594584e-008
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -31.79766464233398,
+               31.79766464233398,
+               31.79766464233398,
+               -31.79766464233398
+            ],
+            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
+         },
+         "file" : "assets/terrain.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            4.0,
+            -31.79766464233398,
+            4.0
+         ],
+         "name" : "GroundStatic",
+         "opacity" : 1,
+         "scale" : 8.0
+      },
+      
+      {
+         "body" : 22,
+         "center" : 
+         {
+            "x" : -3.287936145568438e-009,
+            "y" : 7.801725132594584e-008
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -31.79766464233398,
+               31.79766464233398,
+               31.79766464233398,
+               -31.79766464233398
+            ],
+            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
+         },
+         "file" : "assets/terrain.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            -4.0,
+            31.79766464233398,
+            4.0,
+            -31.79766464233398,
+            4.0
+         ],
+         "name" : "GroundStatic",
+         "opacity" : 1,
+         "scale" : 8.0
+      },
+      
+      {
+         "body" : 24,
+         "center" : 
+         {
+            "x" : -1.768990358641531e-007,
+            "y" : 5.990732887539707e-008
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -2.638335943222046,
+               2.638335704803467,
+               2.638335704803467,
+               -2.638335943222046
+            ],
+            "y" : 
+            [
+               -0.2644947469234467,
+               -0.2644947469234467,
+               0.2644948661327362,
+               0.2644948661327362
+            ]
+         },
+         "file" : "assets/plank03.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -2.638335943222046,
+            -0.2644947469234467,
+            2.638335704803467,
+            -0.2644947469234467,
+            2.638335704803467,
+            0.2644948661327362,
+            -2.638335943222046,
+            0.2644948661327362
+         ],
+         "name" : "Plank",
+         "opacity" : 1,
+         "scale" : 0.5289896130561829
+      },
+      
+      {
+         "body" : 25,
          "center" : 
          {
             "x" : -3.814697265625000e-006,
@@ -2616,7 +2539,129 @@
       },
       
       {
-         "body" : 16,
+         "body" : 25,
+         "center" : 0,
+         "corners" : 
+         {
+            "x" : 
+            [
+               -0.5395683646202087,
+               0.5395683646202087,
+               0.5395683646202087,
+               -0.5395683646202087
+            ],
+            "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+         },
+         "file" : "assets/victimNormal.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -0.5395683646202087,
+            -1.0,
+            0.5395683646202087,
+            -1.0,
+            0.5395683646202087,
+            1.0,
+            -0.5395683646202087,
+            1.0
+         ],
+         "name" : "Victim",
+         "opacity" : 1,
+         "scale" : 2.0
+      },
+      
+      {
+         "body" : 25,
+         "center" : 
+         {
+            "x" : 1.668930053710938e-005,
+            "y" : -3.552436828613281e-005
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -14.49998283386231,
+               14.50001716613770,
+               14.50001716613770,
+               -14.49998283386231
+            ],
+            "y" : 
+            [
+               -14.50003528594971,
+               -14.50003528594971,
+               14.49996471405029,
+               14.49996471405029
+            ]
+         },
+         "file" : "assets/whiteSightRing.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -14.49998283386231,
+            -14.50003528594971,
+            14.50001716613770,
+            -14.50003528594971,
+            14.50001716613770,
+            14.49996471405029,
+            -14.49998283386231,
+            14.49996471405029
+         ],
+         "name" : "NormalSight",
+         "opacity" : 0.50,
+         "scale" : 29.0
+      },
+      
+      {
+         "body" : 25,
+         "center" : 
+         {
+            "x" : -3.814697265625000e-006,
+            "y" : -1.943111419677734e-005
+         },
+         "corners" : 
+         {
+            "x" : 
+            [
+               -14.50000381469727,
+               14.49999618530273,
+               14.49999618530273,
+               -14.50000381469727
+            ],
+            "y" : 
+            [
+               -14.50001907348633,
+               -14.50001907348633,
+               14.49998092651367,
+               14.49998092651367
+            ]
+         },
+         "file" : "assets/redSightRing.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -14.50000381469727,
+            -14.50001907348633,
+            14.49999618530273,
+            -14.50001907348633,
+            14.49999618530273,
+            14.49998092651367,
+            -14.50000381469727,
+            14.49998092651367
+         ],
+         "name" : "ScaredSight",
+         "opacity" : 0.50,
+         "scale" : 29.0
+      },
+      
+      {
+         "body" : 19,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2730,7 +2775,41 @@
       },
       
       {
-         "body" : 24,
+         "body" : 13,
+         "center" : 0,
+         "corners" : 
+         {
+            "x" : 
+            [
+               -0.4899713397026062,
+               0.4899713397026062,
+               0.4899713397026062,
+               -0.4899713397026062
+            ],
+            "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+         },
+         "file" : "assets/HeroFly.png",
+         "filter" : 1,
+         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
+         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
+         "glVertexPointer" : 
+         [
+            -0.4899713397026062,
+            -1.0,
+            0.4899713397026062,
+            -1.0,
+            0.4899713397026062,
+            1.0,
+            -0.4899713397026062,
+            1.0
+         ],
+         "name" : "HeroBodyFly",
+         "opacity" : 1,
+         "scale" : 2.0
+      },
+      
+      {
+         "body" : 16,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2768,7 +2847,7 @@
       },
       
       {
-         "body" : 26,
+         "body" : 12,
          "center" : 
          {
             "x" : -3.287936145568438e-009,
@@ -2807,116 +2886,6 @@
       
       {
          "body" : 25,
-         "center" : 0,
-         "corners" : 
-         {
-            "x" : 
-            [
-               -0.5249344110488892,
-               0.5249344110488892,
-               0.5249344110488892,
-               -0.5249344110488892
-            ],
-            "y" : [ -1.0, -1.0, 1.0, 1.0 ]
-         },
-         "file" : "assets/HeroStill.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -0.5249344110488892,
-            -1.0,
-            0.5249344110488892,
-            -1.0,
-            0.5249344110488892,
-            1.0,
-            -0.5249344110488892,
-            1.0
-         ],
-         "name" : "HeroBody",
-         "opacity" : 1,
-         "scale" : 2.0
-      },
-      
-      {
-         "body" : 14,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 28,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 30,
          "center" : 
          {
             "x" : -3.814697265625000e-006,
@@ -2960,319 +2929,41 @@
       },
       
       {
-         "body" : 29,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 30,
-         "center" : 
-         {
-            "x" : 1.668930053710938e-005,
-            "y" : -3.552436828613281e-005
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -14.49998283386231,
-               14.50001716613770,
-               14.50001716613770,
-               -14.49998283386231
-            ],
-            "y" : 
-            [
-               -14.50003528594971,
-               -14.50003528594971,
-               14.49996471405029,
-               14.49996471405029
-            ]
-         },
-         "file" : "assets/whiteSightRing.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -14.49998283386231,
-            -14.50003528594971,
-            14.50001716613770,
-            -14.50003528594971,
-            14.50001716613770,
-            14.49996471405029,
-            -14.49998283386231,
-            14.49996471405029
-         ],
-         "name" : "NormalSight",
-         "opacity" : 0.50,
-         "scale" : 29.0
-      },
-      
-      {
-         "body" : 30,
+         "body" : 13,
          "center" : 0,
          "corners" : 
          {
             "x" : 
             [
-               -0.5395683646202087,
-               0.5395683646202087,
-               0.5395683646202087,
-               -0.5395683646202087
+               -0.4899713397026062,
+               0.4899713397026062,
+               0.4899713397026062,
+               -0.4899713397026062
             ],
             "y" : [ -1.0, -1.0, 1.0, 1.0 ]
          },
-         "file" : "assets/victimNormal.png",
+         "file" : "assets/HeroStill.png",
          "filter" : 1,
          "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
          "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
          "glVertexPointer" : 
          [
-            -0.5395683646202087,
+            -0.4899713397026062,
             -1.0,
-            0.5395683646202087,
+            0.4899713397026062,
             -1.0,
-            0.5395683646202087,
+            0.4899713397026062,
             1.0,
-            -0.5395683646202087,
+            -0.4899713397026062,
             1.0
          ],
-         "name" : "Victim",
+         "name" : "HeroBodyStill",
          "opacity" : 1,
          "scale" : 2.0
       },
       
       {
-         "body" : 31,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 30,
-         "center" : 
-         {
-            "x" : -3.814697265625000e-006,
-            "y" : -1.943111419677734e-005
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -14.50000381469727,
-               14.49999618530273,
-               14.49999618530273,
-               -14.50000381469727
-            ],
-            "y" : 
-            [
-               -14.50001907348633,
-               -14.50001907348633,
-               14.49998092651367,
-               14.49998092651367
-            ]
-         },
-         "file" : "assets/redSightRing.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -14.50000381469727,
-            -14.50001907348633,
-            14.49999618530273,
-            -14.50001907348633,
-            14.49999618530273,
-            14.49998092651367,
-            -14.50000381469727,
-            14.49998092651367
-         ],
-         "name" : "ScaredSight",
-         "opacity" : 0.50,
-         "scale" : 29.0
-      },
-      
-      {
-         "body" : 22,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 18,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 20,
-         "center" : 
-         {
-            "x" : -3.287936145568438e-009,
-            "y" : 7.801725132594584e-008
-         },
-         "corners" : 
-         {
-            "x" : 
-            [
-               -31.79766464233398,
-               31.79766464233398,
-               31.79766464233398,
-               -31.79766464233398
-            ],
-            "y" : [ -4.0, -4.0, 4.0, 4.0 ]
-         },
-         "file" : "assets/terrain.png",
-         "filter" : 1,
-         "glDrawElements" : [ 0, 1, 2, 2, 3, 0 ],
-         "glTexCoordPointer" : [ 0.0, 0.0, 1.0, 0.0, 1.0, 1.0, 0.0, 1.0 ],
-         "glVertexPointer" : 
-         [
-            -31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            -4.0,
-            31.79766464233398,
-            4.0,
-            -31.79766464233398,
-            4.0
-         ],
-         "name" : "GroundStatic",
-         "opacity" : 1,
-         "scale" : 8.0
-      },
-      
-      {
-         "body" : 12,
+         "body" : 17,
          "center" : 
          {
             "x" : -3.287936145568438e-009,

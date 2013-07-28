@@ -309,7 +309,7 @@
       },
       
       {
-        "angle" : 0,
+        "angle" : 1.570796370506287,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -352,8 +352,8 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : 127.1549224853516,
-          "y" : -3.753160715103149
+          "x" : 99.35855102539063,
+          "y" : 151.2940979003906
         },
         "type" : "static"
       },
@@ -402,8 +402,8 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -127.2348175048828,
-          "y" : -3.753161191940308
+          "x" : -0.03994476795196533,
+          "y" : 179.4118499755859
         },
         "type" : "static"
       },
@@ -432,25 +432,29 @@
             {
               "x" : 
               [
-                -0.5213708877563477,
-                0.5265059471130371,
-                0.5265059471130371,
-                -0.5213708877563477
+                -0.4858250021934509,
+                0.4909600019454956,
+                0.4909600019454956,
+                -0.4858250021934509
               ],
               "y" : [ -1.0, -1.0, 1.0, 1.0 ]
             }
           }
         ],
-        "gravityScale" : 9.999999824516700e-014,
+        "gravityScale" : 0,
         "id" : 5,
         "linearDamping" : 4.0,
-        "linearVelocity" : 0,
+        "linearVelocity" : 
+        {
+          "x" : 0,
+          "y" : 10.0
+        },
         "massData-mass" : 1,
         "name" : "HeroSoul",
         "position" : 
         {
-          "x" : -12.04452991485596,
-          "y" : 1.327830314636231
+          "x" : -11.63776493072510,
+          "y" : 1.333419561386108
         },
         "sleepingAllowed" : false,
         "type" : "dynamic"
@@ -500,8 +504,8 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -63.63739013671875,
-          "y" : -3.753160715103149
+          "x" : 63.55749511718750,
+          "y" : 179.4118499755859
         },
         "type" : "static"
       },
@@ -517,7 +521,7 @@
           {
             "friction" : 1,
             "id" : 7,
-            "name" : "HeroBody",
+            "name" : "HeroBodyStill",
             "shapes" : 
             [
               
@@ -529,10 +533,10 @@
             {
               "x" : 
               [
-                -0.5239992141723633,
-                0.5238776206970215,
-                0.5238776206970215,
-                -0.5239992141723633
+                -0.4877319931983948,
+                0.4876109957695007,
+                0.4876109957695007,
+                -0.4877319931983948
               ],
               "y" : [ -1.0, -1.0, 1.0, 1.0 ]
             }
@@ -548,14 +552,38 @@
             [
               
               {
-                "radius" : 5.485641956329346,
+                "radius" : 5.485640048980713,
                 "type" : "circle"
               }
             ],
             "vertices" : 
             {
-              "x" : [ -4.768371582031250e-007 ],
-              "y" : [ -5.245208740234375e-006 ]
+              "x" : [ -4.768369876728684e-007 ],
+              "y" : [ -5.245210104476428e-006 ]
+            }
+          },
+          
+          {
+            "friction" : 1,
+            "id" : 37,
+            "name" : "HeroBodyFly",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -0.4920459985733032,
+                0.4919239878654480,
+                0.4919239878654480,
+                -0.4920459985733032
+              ],
+              "y" : [ -1.0, -1.0, 1.0, 1.0 ]
             }
           }
         ],
@@ -566,11 +594,61 @@
         "name" : "HeroBody",
         "position" : 
         {
-          "x" : -12.04461765289307,
-          "y" : 1.327783584594727
+          "x" : -11.63785457611084,
+          "y" : 1.333373785018921
         },
         "sleepingAllowed" : false,
         "type" : "kinematic"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 6,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 99.35855102539063,
+          "y" : 24.09920692443848
+        },
+        "type" : "static"
       },
       
       {
@@ -612,69 +690,19 @@
             }
           }
         ],
-        "id" : 8,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : -0.03994476795196533,
-          "y" : -3.753161191940308
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 0,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 6,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
         "id" : 9,
         "linearVelocity" : 0,
         "name" : "HorizontalGround",
         "position" : 
         {
           "x" : -63.63739013671875,
-          "y" : 243.4896392822266
+          "y" : 179.4118499755859
         },
         "type" : "static"
       },
       
       {
-        "angle" : 0,
+        "angle" : 0.7853981852531433,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -717,14 +745,14 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -127.2348175048828,
-          "y" : 243.4896392822266
+          "x" : 92.91624450683594,
+          "y" : 3.434521675109863
         },
         "type" : "static"
       },
       
       {
-        "angle" : 0,
+        "angle" : 1.570796370506287,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -767,14 +795,14 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -0.03994476795196533,
-          "y" : 243.4896392822266
+          "x" : -99.44306182861328,
+          "y" : 24.09547805786133
         },
         "type" : "static"
       },
       
       {
-        "angle" : 0,
+        "angle" : 1.570796370506287,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -817,8 +845,8 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : 63.55749511718750,
-          "y" : 243.4896392822266
+          "x" : 99.35855102539063,
+          "y" : 87.69667053222656
         },
         "type" : "static"
       },
@@ -886,6 +914,7 @@
           }
         ],
         "id" : 13,
+        "linearDamping" : 1,
         "linearVelocity" : 0,
         "massData-I" : 97.47360992431641,
         "massData-center" : 
@@ -897,14 +926,14 @@
         "name" : "Boulder",
         "position" : 
         {
-          "x" : -42.95641708374023,
+          "x" : -46.26227951049805,
           "y" : 12.02467727661133
         },
         "type" : "dynamic"
       },
       
       {
-        "angle" : 0,
+        "angle" : -0.7853981852531433,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -947,14 +976,14 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : 127.1549224853516,
-          "y" : 243.4896392822266
+          "x" : -93.52262115478516,
+          "y" : 3.588602066040039
         },
         "type" : "static"
       },
       
       {
-        "angle" : 1.570796370506287,
+        "angle" : 0.7853981852531433,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -997,8 +1026,8 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -154.8818054199219,
-          "y" : 24.30267715454102
+          "x" : -93.03217315673828,
+          "y" : 172.4194488525391
         },
         "type" : "static"
       },
@@ -1047,14 +1076,14 @@
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -154.8818054199219,
-          "y" : 151.497558593750
+          "x" : -99.44306182861328,
+          "y" : 87.69290161132813
         },
         "type" : "static"
       },
       
       {
-        "angle" : 1.570796370506287,
+        "angle" : 0,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -1092,19 +1121,19 @@
             }
           }
         ],
-        "id" : 18,
+        "id" : 17,
         "linearVelocity" : 0,
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -154.8818054199219,
-          "y" : 278.6924133300781
+          "x" : -63.63739013671875,
+          "y" : -3.753160715103149
         },
         "type" : "static"
       },
       
       {
-        "angle" : 1.570796370506287,
+        "angle" : 0,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -1142,13 +1171,13 @@
             }
           }
         ],
-        "id" : 19,
+        "id" : 18,
         "linearVelocity" : 0,
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -154.8818054199219,
-          "y" : 215.0949859619141
+          "x" : -0.03994476795196533,
+          "y" : -3.753161191940308
         },
         "type" : "static"
       },
@@ -1192,19 +1221,19 @@
             }
           }
         ],
-        "id" : 20,
+        "id" : 19,
         "linearVelocity" : 0,
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : -154.8818054199219,
-          "y" : 87.90010070800781
+          "x" : -99.44306182861328,
+          "y" : 151.2903594970703
         },
         "type" : "static"
       },
       
       {
-        "angle" : 1.570796370506287,
+        "angle" : -0.7853981852531433,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -1242,413 +1271,13 @@
             }
           }
         ],
-        "id" : 21,
+        "id" : 20,
         "linearVelocity" : 0,
         "name" : "HorizontalGround",
         "position" : 
         {
-          "x" : 154.5236206054688,
-          "y" : 215.6911315917969
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 1.570796370506287,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 22,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 22,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 154.5236206054688,
-          "y" : 279.288574218750
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 1.570796370506287,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 23,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 23,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 154.5236206054688,
-          "y" : 88.49624633789063
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 1.570796370506287,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 24,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 24,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 154.5236206054688,
-          "y" : 152.0937042236328
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 1.570796370506287,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 25,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 25,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 154.5236206054688,
-          "y" : 24.89882278442383
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : -0.7853981852531433,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 28,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 26,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : -148.9613647460938,
-          "y" : 3.795800685882568
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : -0.7853981852531433,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 29,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 27,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 146.1357727050781,
-          "y" : 238.6421356201172
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 0.7853981852531433,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 30,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 28,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : -148.6229553222656,
-          "y" : 236.8910369873047
-        },
-        "type" : "static"
-      },
-      
-      {
-        "angle" : 0.7853981852531433,
-        "angularVelocity" : 0,
-        "awake" : true,
-        "fixture" : 
-        [
-          
-          {
-            "density" : 1,
-            "filter-categoryBits" : 80,
-            "friction" : 0.2,
-            "id" : 31,
-            "name" : "GroundStatic",
-            "shapes" : 
-            [
-              
-              {
-                "type" : "polygon"
-              }
-            ],
-            "vertices" : 
-            {
-              "x" : 
-              [
-                -31.79966545104981,
-                31.79771804809570,
-                31.79771804809570,
-                -31.79966545104981
-              ],
-              "y" : 
-              [
-                -3.946934938430786,
-                -3.946934938430786,
-                3.999958515167236,
-                3.999958515167236
-              ]
-            }
-          }
-        ],
-        "id" : 29,
-        "linearVelocity" : 0,
-        "name" : "HorizontalGround",
-        "position" : 
-        {
-          "x" : 148.0813140869141,
-          "y" : 3.239534378051758
+          "x" : 90.9707031250,
+          "y" : 174.2451019287109
         },
         "type" : "static"
       },
@@ -1693,6 +1322,7 @@
           }
         ],
         "id" : 30,
+        "linearDamping" : 0.8999999761581421,
         "linearVelocity" : 0,
         "massData-I" : 19.32643318176270,
         "massData-center" : 
@@ -1711,7 +1341,7 @@
       },
       
       {
-        "angle" : -0.02099359408020973,
+        "angle" : -0.04764062166213989,
         "angularVelocity" : 0,
         "awake" : true,
         "fixture" : 
@@ -1753,7 +1383,7 @@
         "name" : "Slab",
         "position" : 
         {
-          "x" : -33.12541580200195,
+          "x" : -36.43127822875977,
           "y" : 7.412734031677246
         },
         "type" : "static"
@@ -1821,7 +1451,7 @@
     [
       
       {
-        "body" : 8,
+        "body" : 1,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -1839,17 +1469,17 @@
       {
         "body" : 7,
         "center" : 0,
-        "file" : "HeroStill.png",
+        "file" : "HeroFly.png",
         "filter" : 1,
         "flip" : false,
         "id" : 2,
-        "name" : "HeroBody",
+        "name" : "HeroBodyFly",
         "opacity" : 1,
         "scale" : 2.0
       },
       
       {
-        "body" : 1,
+        "body" : 18,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -1865,7 +1495,7 @@
       },
       
       {
-        "body" : 3,
+        "body" : 14,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -1881,7 +1511,7 @@
       },
       
       {
-        "body" : 6,
+        "body" : 20,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -1897,7 +1527,7 @@
       },
       
       {
-        "body" : 4,
+        "body" : 15,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2005,7 +1635,7 @@
       },
       
       {
-        "body" : 14,
+        "body" : 17,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2021,7 +1651,7 @@
       },
       
       {
-        "body" : 12,
+        "body" : 6,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2037,7 +1667,7 @@
       },
       
       {
-        "body" : 11,
+        "body" : 4,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2069,7 +1699,7 @@
       },
       
       {
-        "body" : 18,
+        "body" : 19,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2101,7 +1731,7 @@
       },
       
       {
-        "body" : 20,
+        "body" : 11,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2117,7 +1747,7 @@
       },
       
       {
-        "body" : 19,
+        "body" : 3,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2133,7 +1763,7 @@
       },
       
       {
-        "body" : 15,
+        "body" : 8,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2165,7 +1795,7 @@
       },
       
       {
-        "body" : 21,
+        "body" : 12,
         "center" : 
         {
           "x" : -3.287936145568438e-009,
@@ -2175,134 +1805,6 @@
         "filter" : 1,
         "flip" : false,
         "id" : 23,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 25,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 24,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 23,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 25,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 22,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 27,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 24,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 28,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 26,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 29,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 27,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 30,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 28,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 31,
-        "name" : "GroundStatic",
-        "opacity" : 1,
-        "scale" : 8.0
-      },
-      
-      {
-        "body" : 29,
-        "center" : 
-        {
-          "x" : -3.287936145568438e-009,
-          "y" : 7.801725132594584e-008
-        },
-        "file" : "terrain.png",
-        "filter" : 1,
-        "flip" : false,
-        "id" : 32,
         "name" : "GroundStatic",
         "opacity" : 1,
         "scale" : 8.0
@@ -2322,6 +1824,18 @@
         "name" : "Block",
         "opacity" : 1,
         "scale" : 3.281526803970337
+      },
+      
+      {
+        "body" : 7,
+        "center" : 0,
+        "file" : "HeroStill.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 34,
+        "name" : "HeroBodyStill",
+        "opacity" : 1,
+        "scale" : 2.0
       },
       
       {
@@ -2368,7 +1882,7 @@
     [
       
       {
-        "command" : "H:\\Dev\\Haxe\\B2destHero\\lauchNewJsonCrousti.bat",
+        "command" : "H:\\Dev\\Haxe\\B2destHero\\Utils\\Level01.bat",
         "directory" : "H:\\Dev\\Haxe\\B2destHero\\Export\\flash\\bin\\assets",
         "enabled" : true
       }

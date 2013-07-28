@@ -21,7 +21,7 @@ class Main extends Sprite {
 	
 	//constantes
 	static private var CAMERA_OFFSET:B2Vec2 = new B2Vec2(0, -0);
-	static private var FORCE_MULT:Int = 200;
+	static private var FORCE_MULT:Int = 150;
 	static private var HALF_STAGE_SIZES:B2Vec2;
 
 	//affichage
@@ -51,6 +51,8 @@ class Main extends Sprite {
 	
 	public function new () {
 		super ();
+			
+		focusRect = false;
 		
 		HALF_STAGE_SIZES = new B2Vec2(stage.stageWidth / 2, stage.stageHeight / 2);
 
@@ -84,22 +86,57 @@ class Main extends Sprite {
 			}
 			case GameState.Level01: {
 				levelFile = "assets/Level01.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
 			}
 			case GameState.Level02: {
 				levelFile = "assets/Level02.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
 			}
 			case GameState.Level03: {
 				levelFile = "assets/Level03.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
 			}
 			case GameState.Level04: {
 				levelFile = "assets/Level04.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
 			}
 			case GameState.Level05: {
 				levelFile = "assets/Level05.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
+			}
+			case GameState.Level06: {
+				levelFile = "assets/Level06.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
+			}
+			case GameState.Level07: {
+				levelFile = "assets/Level07.json";
+				if (Assets.getText(levelFile) == null) {
+					gameState = GameState.StartMenu;
+					reStart();
+				}
 			}
 		}
 		//gameWorld contient le B2DWorld, gere le texturage des body et la majorité de la logique de jeu
 		gameWorld = new GameWorld(drawDebugGameWorld, levelFile);
+		
 		//fond du décor
 		var bitty:BitmapData = Assets.getBitmapData ("assets/Background.png");
 		gameWorld.graphics.clear();
@@ -128,7 +165,7 @@ class Main extends Sprite {
 		watcherText2.y = 30;
 		watcherText2.textColor = 0x808080;
 		watcherText2.selectable = false;
-		//addChild(watcherText2);
+		addChild(watcherText2);
 		
 		retryButton = new RetryButton();
 		retryButton.addEventListener(MouseEvent.CLICK, buttonClicked);
@@ -147,7 +184,6 @@ class Main extends Sprite {
 		if (gameState == GameState.StartMenu) return;
 		if (gameState == GameState.TutoScreen) return;
 		if (!gameWorld.okToRun) return;
-		
 		//mise à jour des scores - overlay
 		gameWorld.this_onEnterFrame(event);
 		var victimsLeft:Int = gameWorld.getVictimsLeft();
@@ -168,6 +204,7 @@ class Main extends Sprite {
 		heroBodyVelocity.add(heroBodySoulDistance);
 		gameWorld.setHeroVelocity(heroBodyVelocity);		
 		
+		//application des evènements touches
 		if (keyW) gameWorld.goBackToHeroBody();
 		if (keyX) gameWorld.expulseHeroAuraContacts();
 		if (keyC) gameWorld.heroAskReward();
@@ -177,40 +214,24 @@ class Main extends Sprite {
 		
 
 		if (gameWorld.levelFinished && endScore == null) {
+			removeChild(retryButton);
 			gameWorld.okToRun = false;
 			endScore = new EndScore(gameWorld);
-			//Lib.current.stage.addEventListener (KeyboardEvent.KEY_DOWN, anyKeyToStart);
+			Lib.current.stage.addEventListener (KeyboardEvent.KEY_DOWN, almostAnyKeyToStart);
 			endScore.addEventListener(MouseEvent.CLICK, buttonClicked);
 			addChild(endScore);
+			addChild(retryButton);
 		}
 		//watcherText1.text = "Score : " + cast(score);// + "\n game phase : " + cast(gamePhase);
 		//watcherText1.text = "ScrollRect : " + gameWorld.scrollRect.toString() + "\n game phase : " + cast(gamePhase);
 		//watcherText1.text = "X : " + cast(this.stage.stageWidth) + "\nY : " + cast(this.stage.stageHeight);
 		//watcherText2.text = "X : " + cast(soulVelocity.x) + "\nY : " + cast(soulVelocity.y);
-		//watcherText2.text = gameWorld.watcher;
+		watcherText2.text = gameWorld.watcher;
 	}
 
 	private function reportKeyDown(keybEvent:KeyboardEvent):Void { 
 		//watcherText1.text = "Key Pressed: " + String.fromCharCode(keybEvent.charCode) + " (character code: " + keybEvent.charCode + ")"; 
 
-		//var modValue:Float = 0.25;
-		//if (keybEvent.charCode == 108) {
-			//gameWorld.offsetY -= modValue;
-		//}
-		//if (keybEvent.charCode == 111) {
-			//gameWorld.offsetY += modValue;
-		//}
-		//if (keybEvent.charCode == 109) {
-			//pixelPerMeter -= modValue;
-			//gameWorld.setPixelPerMeter(pixelPerMeter);
-			//heroWorld.setPixelPerMeter(pixelPerMeter);
-		//}
-		//if (keybEvent.charCode == 112) {
-			//pixelPerMeter += modValue;
-			//gameWorld.setPixelPerMeter(pixelPerMeter);
-			//heroWorld.setPixelPerMeter(pixelPerMeter);
-		//}
-	
 		switch (keybEvent.keyCode) {
 			case Keyboard.DOWN: movingDown = FORCE_MULT;
 			case Keyboard.LEFT: movingLeft = FORCE_MULT;
@@ -218,6 +239,7 @@ class Main extends Sprite {
 			case Keyboard.UP: movingUp = FORCE_MULT;
 			case Keyboard.W: keyW = true;
 			case Keyboard.X: keyX = true;
+			case Keyboard.C: keyC = true;
 			case Keyboard.C: keyC = true;
 		}
 	}
@@ -240,22 +262,31 @@ class Main extends Sprite {
 		nextGameState();
 	}
 	
+	public function almostAnyKeyToStart(keybEvent:KeyboardEvent):Void 
+	{
+		if (keybEvent.keyCode != Keyboard.UP && keybEvent.keyCode != Keyboard.DOWN && keybEvent.keyCode != Keyboard.LEFT && keybEvent.keyCode != Keyboard.RIGHT && keybEvent.keyCode != Keyboard.W && keybEvent.keyCode != Keyboard.X && keybEvent.keyCode != Keyboard.C) {
+			Lib.current.stage.removeEventListener(KeyboardEvent.KEY_DOWN, almostAnyKeyToStart);
+			nextGameState();
+		}
+	}
+	
 	public function buttonClicked(event:MouseEvent):Void 
 	{
 		
 		if (event.target == retryButton) {
+			Lib.current.stage.removeEventListener(KeyboardEvent.KEY_DOWN, almostAnyKeyToStart);
 			event.stopImmediatePropagation();
 			reStart();
 		}else if (event.target == endScore) {
+			Lib.current.stage.removeEventListener(KeyboardEvent.KEY_DOWN, almostAnyKeyToStart);
 			event.stopImmediatePropagation();
 			nextGameState();
-		//}else if (event.target == overlay) {
-			//event.stopImmediatePropagation();
-			//reStart();
 		}else {
+			Lib.current.stage.removeEventListener(KeyboardEvent.KEY_DOWN, almostAnyKeyToStart);
 			Lib.current.stage.removeEventListener(KeyboardEvent.KEY_DOWN, anyKeyToStart);
 			nextGameState();
 		}
+		if (stage.focus != gameWorld) stage.focus = gameWorld;
 	}
 	
 	public function nextGameState():Void 
@@ -275,12 +306,18 @@ class Main extends Sprite {
 				gameState = GameState.Level03;
 			}
 			case GameState.Level03: {
-				gameState = GameState.StartMenu;
+				gameState = GameState.Level04;
 			}
 			case GameState.Level04: {
 				gameState = GameState.Level05;
 			}
 			case GameState.Level05: {
+				gameState = GameState.StartMenu;
+			}
+			case GameState.Level06: {
+				gameState = GameState.Level07;
+			}
+			case GameState.Level07: {
 				gameState = GameState.StartMenu;
 			}
 		}

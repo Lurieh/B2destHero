@@ -20,8 +20,6 @@ class AssetData {
 			
 			className.set ("assets/ActionManBold.ttf", nme.NME_assets_actionmanbold_ttf);
 			type.set ("assets/ActionManBold.ttf", Reflect.field (AssetType, "font".toUpperCase ()));
-			className.set ("assets/Arrow.fla", nme.NME_assets_arrow_fla);
-			type.set ("assets/Arrow.fla", Reflect.field (AssetType, "binary".toUpperCase ()));
 			className.set ("assets/Arrow.png", nme.NME_assets_arrow_png);
 			type.set ("assets/Arrow.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/Background.png", nme.NME_assets_background_png);
@@ -50,6 +48,14 @@ class AssetData {
 			type.set ("assets/Level03.json", Reflect.field (AssetType, "text".toUpperCase ()));
 			className.set ("assets/Level03.rube", nme.NME_assets_level03_rube);
 			type.set ("assets/Level03.rube", Reflect.field (AssetType, "binary".toUpperCase ()));
+			className.set ("assets/Level04.json", nme.NME_assets_level04_json);
+			type.set ("assets/Level04.json", Reflect.field (AssetType, "text".toUpperCase ()));
+			className.set ("assets/Level04.rube", nme.NME_assets_level04_rube);
+			type.set ("assets/Level04.rube", Reflect.field (AssetType, "binary".toUpperCase ()));
+			className.set ("assets/Level05.json", nme.NME_assets_level05_json);
+			type.set ("assets/Level05.json", Reflect.field (AssetType, "text".toUpperCase ()));
+			className.set ("assets/Level05.rube", nme.NME_assets_level05_rube);
+			type.set ("assets/Level05.rube", Reflect.field (AssetType, "binary".toUpperCase ()));
 			className.set ("assets/MetalBare.jpg", nme.NME_assets_metalbare_jpg);
 			type.set ("assets/MetalBare.jpg", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/plank02.png", nme.NME_assets_plank02_png);
@@ -58,16 +64,16 @@ class AssetData {
 			type.set ("assets/plank03.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/redSightRing.png", nme.NME_assets_redsightring_png);
 			type.set ("assets/redSightRing.png", Reflect.field (AssetType, "image".toUpperCase ()));
-			className.set ("assets/Sighteffect.fla", nme.NME_assets_sighteffect_fla);
-			type.set ("assets/Sighteffect.fla", Reflect.field (AssetType, "binary".toUpperCase ()));
-			className.set ("assets/sightRing.psd", nme.NME_assets_sightring_psd);
-			type.set ("assets/sightRing.psd", Reflect.field (AssetType, "binary".toUpperCase ()));
 			className.set ("assets/terrain.png", nme.NME_assets_terrain_png);
 			type.set ("assets/terrain.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/tilableWood.png", nme.NME_assets_tilablewood_png);
+			type.set ("assets/tilableWood.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/Tuto.png", nme.NME_assets_tuto_png);
 			type.set ("assets/Tuto.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/victimNormal.png", nme.NME_assets_victimnormal_png);
 			type.set ("assets/victimNormal.png", Reflect.field (AssetType, "image".toUpperCase ()));
+			className.set ("assets/warningUp.png", nme.NME_assets_warningup_png);
+			type.set ("assets/warningUp.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/whiteSightRing.png", nme.NME_assets_whitesightring_png);
 			type.set ("assets/whiteSightRing.png", Reflect.field (AssetType, "image".toUpperCase ()));
 			className.set ("assets/éclat.png", nme.NME_assets__clat_png);
@@ -85,7 +91,6 @@ class AssetData {
 
 
 class NME_assets_actionmanbold_ttf extends flash.text.Font { }
-class NME_assets_arrow_fla extends flash.utils.ByteArray { }
 class NME_assets_arrow_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_background_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_block_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
@@ -100,14 +105,18 @@ class NME_assets_level02_json extends flash.utils.ByteArray { }
 class NME_assets_level02_rube extends flash.utils.ByteArray { }
 class NME_assets_level03_json extends flash.utils.ByteArray { }
 class NME_assets_level03_rube extends flash.utils.ByteArray { }
+class NME_assets_level04_json extends flash.utils.ByteArray { }
+class NME_assets_level04_rube extends flash.utils.ByteArray { }
+class NME_assets_level05_json extends flash.utils.ByteArray { }
+class NME_assets_level05_rube extends flash.utils.ByteArray { }
 class NME_assets_metalbare_jpg extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_plank02_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_plank03_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_redsightring_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
-class NME_assets_sighteffect_fla extends flash.utils.ByteArray { }
-class NME_assets_sightring_psd extends flash.utils.ByteArray { }
 class NME_assets_terrain_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_tilablewood_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_tuto_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_victimnormal_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
+class NME_assets_warningup_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets_whitesightring_png extends flash.display.BitmapData { public function new () { super (0, 0); } }
 class NME_assets__clat_png extends flash.display.BitmapData { public function new () { super (0, 0); } }

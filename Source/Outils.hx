@@ -22,7 +22,7 @@ class Outils
 		
 	}
 	
-	static public function lerp(pStart:B2Vec2, pEnd:B2Vec2, pPercentTravelPerIteration:Float):B2Vec2
+	static public function lerpVector(pStart:B2Vec2, pEnd:B2Vec2, pPercentTravelPerIteration:Float):B2Vec2
 	{
 		var start:B2Vec2 = pStart.copy();
 		var percentTravelPerIteration:Float = pPercentTravelPerIteration;
@@ -32,6 +32,30 @@ class Outils
 		distance.multiply(percentTravelPerIteration);
 		distance.add(start);
 		return distance;
+	}
+	
+	static public function lerpFloat(pStart:Float, pEnd:Float, pPercentTravelPerIteration:Float):Float
+	{
+		var start:Float = pStart;
+		var percentTravelPerIteration:Float = pPercentTravelPerIteration;
+		var distance:Float = pEnd;
+		
+		distance -= start;
+		distance *= percentTravelPerIteration;
+		distance += start;
+		return distance;
+	}
+	
+	//applique une matrice B2D sur une matrice Sprite
+	static public function applyB2DTransformToSprite(bodyTransform:B2Transform, fixtureData:FixtureData, pixelPerMeter:Float,  horizontalMirror:Int=1):Void
+	{
+		fixtureData.sprite.transform.matrix = new Matrix (bodyTransform.R.col1.x, bodyTransform.R.col1.y, bodyTransform.R.col2.x, bodyTransform.R.col2.y, bodyTransform.position.x * pixelPerMeter, bodyTransform.position.y * pixelPerMeter);
+	
+		var offsetMatrix:Matrix = fixtureData.offset.clone();
+		var rotatedOffset:B2Vec2 = Outils.rotateVector(new B2Vec2(offsetMatrix.tx * horizontalMirror, offsetMatrix.ty), bodyTransform.getAngle());
+		offsetMatrix.concat(fixtureData.sprite.transform.matrix);
+		
+		fixtureData.sprite.transform.matrix = new Matrix(offsetMatrix.a, offsetMatrix.b, offsetMatrix.c, offsetMatrix.d, -rotatedOffset.x + fixtureData.sprite.x, -rotatedOffset.y + fixtureData.sprite.y);
 	}
 	
 	//pivote le vecteur autour de l'origine
@@ -44,24 +68,6 @@ class Outils
 		var py:Float = vectorToRotate.x * sn + vectorToRotate.y * cs;
 		
 		return new B2Vec2(-px, -py);
-	}
-	
-	//static public function vectorToAngle(vector:B2Vec2):Float {
-		//radians:Float;
-//
-		//radians = atan2(vector.y, vector.x);    // The ONLY right way to get the angle
-		// Also, atan2 returns in radians already
-		//position.x += cos(radians); // Add the X-side to the X pos, and scale it to SPRITE_SPEED
-		//position.y += sin(radians); // Add the Y-side to the Y pos, and scale it to SPRITE_SPEED
-	//}
-
-	//applique une matrice B2D sur une matrice Sprite sans corriger la différence de point d'origine
-	static public function B2DToSpriteMatrix(mySprite:Sprite, bodyTransform:B2Transform, meterToPixel:Float):Matrix
-	{
-		var tempMatrix:Matrix = new Matrix (bodyTransform.R.col1.x, bodyTransform.R.col1.y, bodyTransform.R.col2.x, bodyTransform.R.col2.y, bodyTransform.position.x * meterToPixel, bodyTransform.position.y * meterToPixel);
-		mySprite.transform.matrix = tempMatrix;
-		
-		return mySprite.transform.matrix;
 	}
 	
 	static public function getIfNotNull(internalProperty:Dynamic, externalProperty:Dynamic):Dynamic {

@@ -29,10 +29,10 @@ class ContactListener extends B2ContactListener
 		FixtureB = contact.getFixtureB();
 		
 		//si un corps dynamique "dangereux" collisionne une victime elle se fait destroy
-		if (FixtureA.getUserData().name == "Victim" && FixtureB.getUserData().name != "GroundStatic" && FixtureB.getUserData().name != "HeroAura" && FixtureB.getUserData().name != "Texture") {
+		if (FixtureA.getUserData().name == "Victim" && FixtureB.getUserData().name != "GroundStatic" && FixtureB.getUserData().name != "HeroAura" && FixtureB.getUserData().name != "Slab") {
 			gameWorld.pushDestroyList(FixtureA.getBody());
 		}
-		if (FixtureB.getUserData().name == "Victim" && FixtureA.getUserData().name != "GroundStatic" && FixtureA.getUserData().name != "HeroAura" && FixtureA.getUserData().name != "Texture") {
+		if (FixtureB.getUserData().name == "Victim" && FixtureA.getUserData().name != "GroundStatic" && FixtureA.getUserData().name != "HeroAura" && FixtureA.getUserData().name != "Slab") {
 			gameWorld.pushDestroyList(FixtureB.getBody());
 		}
 		

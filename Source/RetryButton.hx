@@ -30,6 +30,7 @@ class RetryButton extends Sprite
 		//bouton recommencer
 		
 		buttonMode = true;
+		focusRect = false;
 		graphics.beginFill (0x000000, 0.5);
 		graphics.drawEllipse (0, 0, 224, 81);
 	    graphics.endFill();

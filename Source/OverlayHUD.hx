@@ -28,7 +28,6 @@ class OverlayHUD extends Sprite
 		ellipse.graphics.beginFill (0x000000, 0.5);
 		ellipse.graphics.drawEllipse (8, 8, 224, 81);
 		//ellipse.blendMode = BlendMode.SUBTRACT;
-		
 		addChild(ellipse);
 
 		Font.registerFont (OverlayFont);

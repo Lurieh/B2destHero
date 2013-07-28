@@ -15,6 +15,7 @@ class Tuto extends Sprite
 		super ();
 		
 		buttonMode = true;
+		focusRect = false;
 		
 		var bitty:Bitmap = new Bitmap (Assets.getBitmapData("assets/Tuto.png"));
 		addChild(bitty);

@@ -20,6 +20,7 @@ class EndScore extends Sprite
 		
 		super ();
 		
+		var totalVictims:Int = pGameWorld.getTotalVictims();
 		var killedVictims:Int = pGameWorld.getVictimsKiled();
 		var savedVictims:Int = pGameWorld.getVictimsSaved();
 		var timeSpent:Int = pGameWorld.getTimeSpent();
@@ -27,6 +28,7 @@ class EndScore extends Sprite
 		Font.registerFont (EndScoreFont);
 
 		buttonMode = true;
+		focusRect = false;
 		
 		graphics.beginFill(0x161616);
 		graphics.moveTo(0, 0);
@@ -47,7 +49,7 @@ class EndScore extends Sprite
 		looker.height = 300;
 		looker.x = 54;
 		looker.y = 40;
-		looker.text = "Argent pris : " + cast(savedVictims*100) + "$\nVictimes victimisées : " + cast(killedVictims) + "\nTemps : " + cast(timeSpent);
+		looker.text = "Argent pris : " + cast(savedVictims * 100) + "$ / " + cast(totalVictims * 100) + "$\nVictimes victimisées : " + cast(killedVictims) + "\nTemps : " + cast(timeSpent);
 		addChild(looker);
 
 		var looker2:TextField = new TextField();

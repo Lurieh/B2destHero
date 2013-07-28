@@ -19,6 +19,7 @@ class StartMenuScreen extends Sprite
 		super ();
 		
 		buttonMode = true;
+		focusRect = false;
 		
 		Font.registerFont (StartMenuFont);
 

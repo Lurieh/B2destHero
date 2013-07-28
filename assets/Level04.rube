@@ -1,0 +1,4183 @@
+
+{
+  "collisionbitplanes" : 
+  {
+    "names" : 
+    [
+      "Hero",
+      "HeroAura",
+      "Danger",
+      "Vctim",
+      "Static",
+      "Dynamic",
+      "Ground",
+      "LevelElementA",
+      "LevelElementB",
+      "LevelElementC",
+      "bitplane11",
+      "bitplane12",
+      "bitplane13",
+      "bitplane14",
+      "bitplane15",
+      "bitplane16",
+      "bitplane17",
+      "bitplane18",
+      "bitplane19",
+      "bitplane20",
+      "bitplane21",
+      "bitplane22",
+      "bitplane23",
+      "bitplane24",
+      "bitplane25",
+      "bitplane26",
+      "bitplane27",
+      "bitplane28",
+      "bitplane29",
+      "bitplane30",
+      "bitplane31",
+      "bitplane32"
+    ]
+  },
+  "metaworld" : 
+  {
+    "allowSleep" : true,
+    "autoClearForces" : true,
+    "continuousPhysics" : true,
+    "exportOptions" : 
+    {
+      "saveFullPathForImages" : false,
+      "useHumanReadableFloats" : true
+    },
+    "gravity" : 
+    {
+      "x" : 0,
+      "y" : -10.0
+    },
+    "metabody" : 
+    [
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 11,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 4,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -63.63739013671875,
+          "y" : -3.753160715103149
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 14,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 6,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -99.44306182861328,
+          "y" : 151.2903594970703
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 15,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 7,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -0.03994476795196533,
+          "y" : -3.753161191940308
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 16,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 8,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 63.55749511718750,
+          "y" : -3.753161191940308
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0.7853981852531433,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 17,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 9,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -93.03217315673828,
+          "y" : 172.4194488525391
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 18,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 10,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 99.35855102539063,
+          "y" : 87.69667053222656
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0.7853981852531433,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 19,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 11,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 92.91624450683594,
+          "y" : 3.434521675109863
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 20,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 12,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -0.03994476795196533,
+          "y" : 179.4118499755859
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 21,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 13,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -99.44306182861328,
+          "y" : 87.69290161132813
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 22,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 14,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -63.63739013671875,
+          "y" : 179.4118499755859
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 23,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 15,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 99.35855102539063,
+          "y" : 151.2940979003906
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 24,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 16,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 99.35855102539063,
+          "y" : 24.09920692443848
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "filter-maskBits" : 80,
+            "friction" : 1,
+            "id" : 31,
+            "name" : "HeroSoul",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -0.4858250021934509,
+                0.4909600019454956,
+                0.4909600019454956,
+                -0.4858250021934509
+              ],
+              "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+            }
+          }
+        ],
+        "gravityScale" : 0,
+        "id" : 18,
+        "linearDamping" : 4.0,
+        "linearVelocity" : 
+        {
+          "x" : 0,
+          "y" : 10.0
+        },
+        "massData-mass" : 1,
+        "name" : "HeroSoul",
+        "position" : 
+        {
+          "x" : -0.05309283733367920,
+          "y" : 17.74670410156250
+        },
+        "sleepingAllowed" : false,
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "friction" : 1,
+            "id" : 32,
+            "name" : "HeroBodyStill",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -0.4877319931983948,
+                0.4876109957695007,
+                0.4876109957695007,
+                -0.4877319931983948
+              ],
+              "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+            }
+          },
+          
+          {
+            "filter-categoryBits" : 2,
+            "friction" : 0.2,
+            "id" : 33,
+            "name" : "HeroAura",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 5.485640048980713,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ -4.768369876728684e-007 ],
+              "y" : [ -5.245210104476428e-006 ]
+            }
+          },
+          
+          {
+            "friction" : 1,
+            "id" : 34,
+            "name" : "HeroBodyFly",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -0.4920459985733032,
+                0.4919239878654480,
+                0.4919239878654480,
+                -0.4920459985733032
+              ],
+              "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+            }
+          }
+        ],
+        "gravityScale" : 9.999999824516700e-014,
+        "id" : 19,
+        "linearDamping" : 4.0,
+        "linearVelocity" : 0,
+        "name" : "HeroBody",
+        "position" : 
+        {
+          "x" : -0.05317676067352295,
+          "y" : 17.74663543701172
+        },
+        "sleepingAllowed" : false,
+        "type" : "kinematic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 36,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 21,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 63.55749511718750,
+          "y" : 179.4118499755859
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 1.570796370506287,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 38,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 23,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -99.44306182861328,
+          "y" : 24.09547805786133
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : -0.7853981852531433,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 39,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 24,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : -93.52262115478516,
+          "y" : 3.588602066040039
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : -0.7853981852531433,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 80,
+            "friction" : 0.2,
+            "id" : 40,
+            "name" : "GroundStatic",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -31.79966545104981,
+                31.79771804809570,
+                31.79771804809570,
+                -31.79966545104981
+              ],
+              "y" : 
+              [
+                -3.946934938430786,
+                -3.946934938430786,
+                3.999958515167236,
+                3.999958515167236
+              ]
+            }
+          }
+        ],
+        "id" : 25,
+        "linearVelocity" : 0,
+        "name" : "HorizontalGround",
+        "position" : 
+        {
+          "x" : 90.9707031250,
+          "y" : 174.2451019287109
+        },
+        "type" : "static"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 159,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 160,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 87,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 1.641242742538452,
+          "y" : 10.24462413787842
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 161,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 162,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 88,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -5.763363838195801,
+          "y" : 7.844723224639893
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 163,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 164,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 89,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 1.553292274475098,
+          "y" : 6.147776603698731
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 165,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 166,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 90,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -3.364851474761963,
+          "y" : 8.198458671569824
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 167,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 168,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 91,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 7.895464897155762,
+          "y" : 3.701728820800781
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 173,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 174,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 94,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 3.259902954101563,
+          "y" : 8.178881645202637
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 181,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 182,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 98,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -8.638655662536621,
+          "y" : 3.645925045013428
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 183,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 184,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 99,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -1.519138336181641,
+          "y" : 6.176760673522949
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 185,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 186,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 100,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 6.603579998016357,
+          "y" : 5.735908031463623
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 187,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 188,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 101,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -1.636734366416931,
+          "y" : 10.24671936035156
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 189,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 190,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 102,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -4.214761257171631,
+          "y" : 5.713000297546387
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 191,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 192,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 103,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 2.428644895553589,
+          "y" : 3.743457078933716
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 193,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 194,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 104,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 3.750743150711060,
+          "y" : 1.606051683425903
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixedRotation" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 40,
+            "filter-maskBits" : 86,
+            "friction" : 20.0,
+            "id" : 195,
+            "name" : "Victim",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ -0.50, 0.50, 0.50, -0.50 ],
+              "y" : [ -1.0, -1.0, 1.0, 1.0 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999974752427e-007,
+            "filter-categoryBits" : 40,
+            "filter-maskBits" : 4,
+            "friction" : 0.1000000014901161,
+            "id" : 196,
+            "name" : "VictimSight",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 11.93838405609131,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 1.907348632812500e-006 ],
+              "y" : [ -1.513957977294922e-005 ]
+            }
+          },
+          
+          {
+            "density" : 1.000000031374395e-022,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 197,
+            "name" : "SavedSight",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -11.93625450134277,
+                11.93625450134277,
+                11.93625450134277,
+                -11.93625450134277
+              ],
+              "y" : 
+              [
+                -11.93625450134277,
+                -11.93625450134277,
+                11.93625354766846,
+                11.93625354766846
+              ]
+            }
+          },
+          
+          {
+            "density" : 1.000000031374395e-022,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 198,
+            "name" : "NormalSight",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -11.93625450134277,
+                11.93625450134277,
+                11.93625450134277,
+                -11.93625450134277
+              ],
+              "y" : 
+              [
+                -11.93625450134277,
+                -11.93625450134277,
+                11.93625354766846,
+                11.93625354766846
+              ]
+            }
+          },
+          
+          {
+            "density" : 1.000000031374395e-022,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 199,
+            "name" : "ScaredSight",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -11.93625450134277,
+                11.93625450134277,
+                11.93625450134277,
+                -11.93625450134277
+              ],
+              "y" : 
+              [
+                -11.93625450134277,
+                -11.93625450134277,
+                11.93625354766846,
+                11.93625354766846
+              ]
+            }
+          },
+          
+          {
+            "density" : 1.000000031374395e-022,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "id" : 200,
+            "name" : "RedeemableSight",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -11.93625450134277,
+                11.93625450134277,
+                11.93625450134277,
+                -11.93625450134277
+              ],
+              "y" : 
+              [
+                -11.93625450134277,
+                -11.93625450134277,
+                11.93625354766846,
+                11.93625354766846
+              ]
+            }
+          }
+        ],
+        "id" : 105,
+        "linearVelocity" : 0,
+        "massData-I" : 2.333572791835392e-017,
+        "massData-center" : 
+        {
+          "x" : 4.269173903281853e-010,
+          "y" : -3.388656688585456e-009
+        },
+        "massData-mass" : 2.000447750091553,
+        "name" : "Victim",
+        "position" : 
+        {
+          "x" : 0.1152668446302414,
+          "y" : 1.331659317016602
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 201,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 202,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 106,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -9.790520668029785,
+          "y" : 1.433558225631714
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 203,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 204,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 107,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -7.228588581085205,
+          "y" : 1.535235643386841
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 1.948737740516663,
+        "angularDamping" : 1,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 160,
+            "friction" : 20.0,
+            "id" : 205,
+            "name" : "Plank",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -2.638546943664551,
+                2.638547658920288,
+                2.638546228408814,
+                -2.638547182083130
+              ],
+              "y" : 
+              [
+                -0.2646769285202026,
+                -0.2646771669387817,
+                0.2646807432174683,
+                0.2646809816360474
+              ]
+            }
+          }
+        ],
+        "id" : 108,
+        "linearDamping" : 0.50,
+        "linearVelocity" : 0,
+        "massData-I" : 6.547883033752441,
+        "massData-center" : 
+        {
+          "x" : -6.793144535777174e-008,
+          "y" : 1.897318270493997e-006
+        },
+        "massData-mass" : 2.793471336364746,
+        "name" : "Plank",
+        "position" : 
+        {
+          "x" : 1.183570861816406,
+          "y" : 2.899066209793091
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 206,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 207,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 109,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 6.392576217651367,
+          "y" : 1.266494035720825
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 1.178404688835144,
+        "angularDamping" : 1,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 160,
+            "friction" : 20.0,
+            "id" : 208,
+            "name" : "Plank",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -2.638546943664551,
+                2.638547658920288,
+                2.638546228408814,
+                -2.638547182083130
+              ],
+              "y" : 
+              [
+                -0.2646769285202026,
+                -0.2646771669387817,
+                0.2646807432174683,
+                0.2646809816360474
+              ]
+            }
+          }
+        ],
+        "id" : 110,
+        "linearDamping" : 0.50,
+        "linearVelocity" : 0,
+        "massData-I" : 6.547883033752441,
+        "massData-center" : 
+        {
+          "x" : -6.793144535777174e-008,
+          "y" : 1.897318270493997e-006
+        },
+        "massData-mass" : 2.793471336364746,
+        "name" : "Plank",
+        "position" : 
+        {
+          "x" : -1.253428697586060,
+          "y" : 2.861163377761841
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 210,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 211,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 112,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -2.546144008636475,
+          "y" : 3.810527086257935
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 212,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 213,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 113,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 5.340934276580811,
+          "y" : 3.586261034011841
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 214,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 215,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 114,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -3.832184314727783,
+          "y" : 1.628482103347778
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1.857284903526306,
+            "filter-categoryBits" : 36,
+            "friction" : 1,
+            "id" : 216,
+            "name" : "Block",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -3.105809211730957,
+                3.105811119079590,
+                3.105811119079590,
+                -3.105809211730957
+              ],
+              "y" : 
+              [
+                -3.105808973312378,
+                -3.105808973312378,
+                3.105808973312378,
+                3.105808973312378
+              ]
+            }
+          }
+        ],
+        "id" : 115,
+        "linearDamping" : 0.4000000059604645,
+        "linearVelocity" : 0,
+        "massData-I" : 460.8361816406250,
+        "massData-center" : 
+        {
+          "x" : 9.406184631188808e-007,
+          "y" : -1.210728406420003e-008
+        },
+        "massData-mass" : 71.66188049316406,
+        "name" : "Block",
+        "position" : 
+        {
+          "x" : -14.15120410919190,
+          "y" : 3.373156785964966
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1.857284903526306,
+            "filter-categoryBits" : 36,
+            "friction" : 1,
+            "id" : 217,
+            "name" : "Block",
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -3.628531455993652,
+                3.628533363342285,
+                3.628533363342285,
+                -3.628531455993652
+              ],
+              "y" : 
+              [
+                -3.628533840179443,
+                -3.628533840179443,
+                3.628533840179443,
+                3.628533840179443
+              ]
+            }
+          }
+        ],
+        "id" : 116,
+        "linearDamping" : 0.4000000059604645,
+        "linearVelocity" : 0,
+        "massData-I" : 858.5619506835938,
+        "massData-center" : 
+        {
+          "x" : 9.633015451981919e-007,
+          "y" : -1.149160144819916e-008
+        },
+        "massData-mass" : 97.81393432617188,
+        "name" : "Block",
+        "position" : 
+        {
+          "x" : 14.22046756744385,
+          "y" : 3.895183324813843
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 218,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 219,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 117,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 8.909998893737793,
+          "y" : 1.358206987380981
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 220,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 221,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 118,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -5.520283222198486,
+          "y" : 3.443751573562622
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 224,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 225,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 120,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 0.04542851448059082,
+          "y" : 8.224566459655762
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 226,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 227,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 121,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : 4.046019077301025,
+          "y" : 5.799952507019043
+        },
+        "type" : "dynamic"
+      },
+      
+      {
+        "angle" : 0,
+        "angularVelocity" : 0,
+        "awake" : true,
+        "fixture" : 
+        [
+          
+          {
+            "density" : 1,
+            "filter-categoryBits" : 36,
+            "friction" : 0.2,
+            "id" : 228,
+            "name" : "BoulderBody",
+            "shapes" : 
+            [
+              
+              {
+                "radius" : 1.280656099319458,
+                "type" : "circle"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : [ 0.0 ],
+              "y" : [ -1.668930053710938e-006 ]
+            }
+          },
+          
+          {
+            "density" : 9.999999717180685e-010,
+            "filter-categoryBits" : 0,
+            "filter-maskBits" : 0,
+            "friction" : 0.001000000047497451,
+            "id" : 229,
+            "name" : "Boulder",
+            "sensor" : true,
+            "shapes" : 
+            [
+              
+              {
+                "type" : "polygon"
+              }
+            ],
+            "vertices" : 
+            {
+              "x" : 
+              [
+                -1.280653238296509,
+                1.280657291412354,
+                1.280657291412354,
+                -1.280653238296509
+              ],
+              "y" : 
+              [
+                -1.280628442764282,
+                -1.280628442764282,
+                1.280683994293213,
+                1.280683994293213
+              ]
+            }
+          }
+        ],
+        "id" : 122,
+        "linearVelocity" : 0,
+        "massData-I" : 4.225226402282715,
+        "massData-center" : 
+        {
+          "x" : 2.577233902567480e-015,
+          "y" : -1.668930053710938e-006
+        },
+        "massData-mass" : 5.152463436126709,
+        "name" : "Boulder",
+        "position" : 
+        {
+          "x" : -6.673859596252441,
+          "y" : 5.630357742309570
+        },
+        "type" : "dynamic"
+      }
+    ],
+    "metaimage" : 
+    [
+      
+      {
+        "body" : 7,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 1,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 8,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 2,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 24,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 3,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 25,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 4,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 9,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 5,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 11,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 6,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 4,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 15,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 19,
+        "center" : 0,
+        "file" : "HeroStill.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 16,
+        "name" : "HeroBodyStill",
+        "opacity" : 1,
+        "scale" : 2.0
+      },
+      
+      {
+        "body" : 19,
+        "center" : 0,
+        "file" : "HeroFly.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 18,
+        "name" : "HeroBodyFly",
+        "opacity" : 1,
+        "scale" : 2.0
+      },
+      
+      {
+        "body" : 21,
+        "center" : 
+        {
+          "x" : -3.287939920326721e-009,
+          "y" : 7.801730106393734e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 28,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 12,
+        "center" : 
+        {
+          "x" : -3.287939920326721e-009,
+          "y" : 7.801730106393734e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 29,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 14,
+        "center" : 
+        {
+          "x" : -3.287939920326721e-009,
+          "y" : 7.801730106393734e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 30,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 6,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 31,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 13,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 32,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 23,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 33,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 15,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 35,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 16,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 36,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 10,
+        "center" : 
+        {
+          "x" : -3.287936145568438e-009,
+          "y" : 7.801725132594584e-008
+        },
+        "file" : "terrain.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 37,
+        "name" : "GroundStatic",
+        "opacity" : 1,
+        "scale" : 8.0
+      },
+      
+      {
+        "body" : 114,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 95,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 105,
+        "center" : 
+        {
+          "x" : 1.668930053710938e-005,
+          "y" : -3.552436828613281e-005
+        },
+        "file" : "whiteSightRing.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 96,
+        "name" : "NormalSight",
+        "opacity" : 0.50,
+        "scale" : 29.0
+      },
+      
+      {
+        "body" : 112,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 97,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 118,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 98,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 120,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 99,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 109,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 100,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 121,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 101,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 89,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 102,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 102,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 103,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 100,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 104,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 98,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 107,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 87,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 109,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 99,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 110,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 90,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 111,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 113,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 112,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 101,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 113,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 117,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 115,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 116,
+        "center" : 
+        {
+          "x" : 2.278937472510734e-006,
+          "y" : 1.376074294512364e-007
+        },
+        "file" : "Block.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 116,
+        "name" : "Block",
+        "opacity" : 1,
+        "scale" : 7.257089614868164
+      },
+      
+      {
+        "body" : 103,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 119,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 115,
+        "center" : 
+        {
+          "x" : 2.224991931143450e-006,
+          "y" : 9.627844121951057e-008
+        },
+        "file" : "Block.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 120,
+        "name" : "Block",
+        "opacity" : 1,
+        "scale" : 6.211622238159180
+      },
+      
+      {
+        "body" : 88,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 125,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 104,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 126,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 107,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 128,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 106,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 129,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 91,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 130,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 122,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 131,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 105,
+        "center" : 
+        {
+          "x" : -3.814697265625000e-006,
+          "y" : -1.943111419677734e-005
+        },
+        "file" : "greensightRing.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 132,
+        "name" : "SavedSight",
+        "opacity" : 0.50,
+        "scale" : 29.0
+      },
+      
+      {
+        "body" : 105,
+        "center" : 0,
+        "file" : "victimNormal.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 133,
+        "name" : "Victim",
+        "opacity" : 1,
+        "scale" : 2.0
+      },
+      
+      {
+        "body" : 108,
+        "center" : 
+        {
+          "x" : -1.768990358641531e-007,
+          "y" : 5.990732887539707e-008
+        },
+        "file" : "plank03.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 134,
+        "name" : "Plank",
+        "opacity" : 1,
+        "scale" : 0.5289896130561829
+      },
+      
+      {
+        "body" : 110,
+        "center" : 
+        {
+          "x" : -1.768990358641531e-007,
+          "y" : 5.990732887539707e-008
+        },
+        "file" : "plank03.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 135,
+        "name" : "Plank",
+        "opacity" : 1,
+        "scale" : 0.5289896130561829
+      },
+      
+      {
+        "body" : 94,
+        "center" : 
+        {
+          "x" : -3.541904106896254e-006,
+          "y" : 2.641255832713796e-006
+        },
+        "file" : "boulder.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 136,
+        "name" : "Boulder",
+        "opacity" : 1,
+        "scale" : 2.561312198638916
+      },
+      
+      {
+        "body" : 105,
+        "center" : 
+        {
+          "x" : -3.814697265625000e-006,
+          "y" : -1.943111419677734e-005
+        },
+        "file" : "redSightRing.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 137,
+        "name" : "ScaredSight",
+        "opacity" : 0.50,
+        "scale" : 29.0
+      },
+      
+      {
+        "body" : 105,
+        "center" : 
+        {
+          "x" : -3.814697265625000e-006,
+          "y" : -1.943111419677734e-005
+        },
+        "file" : "éclat.png",
+        "filter" : 1,
+        "flip" : false,
+        "id" : 138,
+        "name" : "RedeemableSight",
+        "opacity" : 0.8999999761581421,
+        "scale" : 29.0
+      }
+    ],
+    "positionIterations" : 3,
+    "stepsPerSecond" : 30.0,
+    "subStepping" : false,
+    "velocityIterations" : 8,
+    "warmStarting" : true
+  },
+  "systemhooks" : 
+  {
+    "afterExport" : 
+    [
+      
+      {
+        "command" : "H:\\Dev\\Haxe\\B2destHero\\Utils\\Level04.bat",
+        "directory" : "H:\\Dev\\Haxe\\B2destHero\\Export\\flash\\bin\\assets",
+        "enabled" : true
+      }
+    ]
+  }
+}

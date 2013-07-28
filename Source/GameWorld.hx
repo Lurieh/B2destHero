@@ -31,13 +31,15 @@ import haxe.Log;
 class GameWorld extends Sprite {
 	
 	//constantes
-	private static var PIXEL_PER_METER:Float = 25;
+	private static var PIXEL_PER_METER:Float = 23;
 	private static var EXPULSING_MULT:Float = 25;
 	private static var BODY_CONTROL_COOLDOWN:Int = 10000;
-	
+		private var ARM_FORWARD_VELOCITY:Float = 15;
+
 	//affichage
 	private var PhysicsDebug:Sprite;
 	private var isDebugDrawing:Bool;
+	private var horizontalMirror:Int;
 	
 	//logique de jeu
 	private var heroBody:B2Body;
@@ -51,6 +53,7 @@ class GameWorld extends Sprite {
 	private var victimsTotal:Int;
 	private var victimsSaved:Int;
 	private var victimsKilled:Int;
+	private var redeemedVictimsKilled:Int;
 	public var levelFinished:Bool = false;
 	public var startTime:Float;
 	
@@ -79,6 +82,7 @@ class GameWorld extends Sprite {
 		
 		isDebugDrawing = pIsDebugDrawing;
 		
+		horizontalMirror = 1;
 		victimsTotal = 0;
 		victimsKilled = 0;
 		victimsSaved = 0;
@@ -86,6 +90,8 @@ class GameWorld extends Sprite {
 		PhysicsDebug = new Sprite ();
 		addChild (PhysicsDebug);
 		
+		
+		//debugDraw
 		var debugDraw = new B2DebugDraw ();
 		debugDraw.setSprite (PhysicsDebug);
 		debugDraw.setDrawScale (PIXEL_PER_METER);
@@ -131,7 +137,12 @@ class GameWorld extends Sprite {
 			if (destroyList.remove(bodies[i])) {
 				if (bodyData.name == "Victim") {
 					victimData.removeDirectionArrow();
-					if (!victimData.redeemed) victimsKilled++;
+					if (!victimData.redeemed) {
+						victimsKilled++;
+					}else redeemedVictimsKilled++;
+					if (getVictimsLeft() == 0){
+						levelFinished = true;
+					}
 				}
 				var fixtureToClean:B2Fixture = bodies[i].getFixtureList();
 				while (fixtureToClean != null) {
@@ -204,28 +215,49 @@ class GameWorld extends Sprite {
 						} else fixtureData.sprite.visible = false;
 				}
 				
-				//on bouge les sprites des fixtures (c'est probablement fait de manière plus compliquée que ça ne devrais l'être...j'ai eu des problèmes...)
-				var bodyTransform:B2Transform = bodies[i].getTransform();
-				fixtureData.sprite.transform.matrix = Outils.B2DToSpriteMatrix(fixtureData.sprite, bodyTransform, PIXEL_PER_METER);
 				
-				var tempMatrix:Matrix = fixtureData.offset.clone();
-				var rotatedOffset:B2Vec2 = Outils.rotateVector(new B2Vec2(tempMatrix.tx, tempMatrix.ty), bodyTransform.getAngle());
-				tempMatrix.tx = rotatedOffset.x;
-				tempMatrix.ty = rotatedOffset.y;
-				tempMatrix.concat(fixtureData.sprite.transform.matrix);
-				fixtureData.sprite.transform.matrix = new Matrix(tempMatrix.a, tempMatrix.b, tempMatrix.c, tempMatrix.d, -rotatedOffset.x + fixtureData.sprite.x, -rotatedOffset.y + fixtureData.sprite.y);
-				
-				//animation très basique du hero...
-				if (fixtureData.name == "HeroBody") 
-				{
-					var velocity:B2Vec2 = getSoulVelocity();
-					velocity.normalize();
-					var sign:Int = velocity.x < 0 ? -1 : 1;
-					fixtureData.sprite.scaleX *= velocity.x < 0 ? -1 : 1;
-					var offset:Float = fixtureData.sprite.width * sign;
-					fixtureData.sprite.x -= offset < 0 ? offset : 0;
+				//on colle la transformation des fixtures au sprites
+				var velocity:B2Vec2 = getSoulVelocity();
+				if ((fixtureData.name == "HeroBodyFly")) {
+					//quand le hero se déplace
+					if (velocity.length() > ARM_FORWARD_VELOCITY) {
+						//il met le bras en avant
+						fixtureData.sprite.visible = true;
+						var directionAngle:Float = Math.atan2(velocity.y, velocity.x);
+						directionAngle = directionAngle + Math.PI /2;
+						//il s'oriente vers là ou il vole
+						heroBody.setAngle(directionAngle);
+						//dans quel sens il va?
+						horizontalMirror = velocity.x < 0 ? -1 : 1;
+						//transformation de la texture
+						Outils.applyB2DTransformToSprite(bodies[i].getTransform(), fixtureData, PIXEL_PER_METER,  horizontalMirror);
+						//effet mirroir
+						fixtureData.sprite.scaleX *= horizontalMirror;
+					} else fixtureData.sprite.visible = false;
+					
+				} else if (fixtureData.name == "HeroBodyStill") {
+					//quand il s'arrête
+					if (velocity.length() < ARM_FORWARD_VELOCITY) {
+						//le bras le long du corps
+						fixtureData.sprite.visible = true;
+						//dans quel sens il va?
+						if (velocity.x < -5) horizontalMirror = -1;
+						if (velocity.x > 5) horizontalMirror = 1;
+						//il se remet doucement droit
+						var angle:Float = heroBody.getAngle();
+						var goal:Float = angle > Math.PI ? Math.PI * 2 : 0;
+						heroBody.setAngle(Outils.lerpFloat(angle, goal, 0.2));
+						//transformation de la texture
+						Outils.applyB2DTransformToSprite(bodies[i].getTransform(), fixtureData, PIXEL_PER_METER,  horizontalMirror);
+						//effet mirroir
+						fixtureData.sprite.scaleX *= horizontalMirror;
+					} else fixtureData.sprite.visible = false;
+					
+				} else {				
+					//pour les autres corps que le hero
+					//transformation de la texture
+					Outils.applyB2DTransformToSprite(bodies[i].getTransform(), fixtureData, PIXEL_PER_METER);
 				}
-				
 				fixture = fixture.getNext();
 			}
 		}
@@ -257,11 +289,6 @@ class GameWorld extends Sprite {
 		Timer.delay(function() objectControlCoolDowned = true, BODY_CONTROL_COOLDOWN);
 		watcher = "object control available : " + cast(objectControlCoolDowned);
 
-		//set up input
-		//var input:B2RayCastInput;
-		//input.p1 = tempHeroPos;
-		//input.p2 = pos;
-		//input.maxFraction = 100;
 		var fixtureHit:B2Fixture = world.rayCastOne(opos, pos);
 		if (fixtureHit != null) {
 			if (fixtureHit.getBody().getType() != B2Body.b2_staticBody) 
@@ -323,6 +350,11 @@ class GameWorld extends Sprite {
 		setSoulPosition(controlledBody.getPosition());
 	}
 	
+	public function getTotalVictims():Int
+	{
+		return victimsTotal;
+	}
+	
 	public function getVictimsLeft():Int
 	{
 		return victimsTotal - victimsKilled - victimsSaved;
@@ -330,7 +362,7 @@ class GameWorld extends Sprite {
 	
 	public function getVictimsKiled():Int
 	{
-		return victimsKilled;
+		return victimsKilled + redeemedVictimsKilled;
 	}
 	
 	public function getVictimsSaved():Int
